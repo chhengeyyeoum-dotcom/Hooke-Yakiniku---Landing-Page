@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="/Front-End/Asset/img/Logo.jpg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hokke Yakiniku | Authentic Japanese BBQ</title>
+    <meta name="description" content="Experience the authentic taste of Japanese BBQ at Hokke Yakiniku. Enjoy premium cuts of meat, traditional marinades, and a unique dining experience.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Front-End/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <a href="#hero" class="brand">
+                <img src="/Front-End/Asset/img/Logo.jpg" alt="Hokke Yakiniku Logo" class="logo">
+                <span class="brand-name">Hokke <em>Yakiniku</em></span>
+            </a>
+            <div class="nav-links">
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#location">Contact Us</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+
+        <!-- Hero Section: 3-slide slideshow -->
+        <section id="hero" class="hero-slider">
+            <div class="slides">
+                <div class="slide active" style="background-image:url('/Front-End/Asset/img/Banner 1.png')">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content">
+                        <span class="eyebrow">炭火焼肉 &mdash; Charcoal Grilled</span>
+                        <h1>Welcome to Hokke Yakiniku</h1>
+                        <!--<p>Experience the authentic taste of Japanese BBQ.</p>-->
+                        <div class="hero-actions">
+                            <a href="https://t.me/chhengeee" class="btn btn-primary">Reserve a Table</a>
+                            <a href="#menu" class="btn btn-ghost">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide" style="background-image:url('/Front-End/Asset/img/Banner 2.png')">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content">
+                        <span class="eyebrow">A5 和牛 &mdash; A5 Wagyu</span>
+                        <h1>Premium Cuts, Grilled to Order</h1>
+                        <!--<p>Marbled wagyu, seared over binchotan charcoal at your table.</p>-->
+                        <div class="hero-actions">
+                            <a href="https://t.me/chhengeee" class="btn btn-primary">Reserve a Table</a>
+                            <a href="#menu" class="btn btn-ghost">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide" style="background-image:url('/Front-End/Asset/img/Banner 3.png')">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content">
+                        <span class="eyebrow">秘伝のタレ &mdash; House-Made Tare</span>
+                        <h1>Traditional Marinades</h1>
+                        <!--<p>Generations-old recipes, plated with a modern touch.</p>-->
+                        <div class="hero-actions">
+                            <a href="https://t.me/chhengeee" class="btn btn-primary">Reserve a Table</a>
+                            <a href="#menu" class="btn btn-ghost">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="slide-arrow prev" id="heroPrev" aria-label="Previous slide">&#8249;</button>
+            <button class="slide-arrow next" id="heroNext" aria-label="Next slide">&#8250;</button>
+            <div class="slide-dots" id="heroDots">
+                <button class="dot active" data-slide="0" aria-label="Slide 1"></button>
+                <button class="dot" data-slide="1" aria-label="Slide 2"></button>
+                <button class="dot" data-slide="2" aria-label="Slide 3"></button>
+            </div>
+        </section>
+
+        <div class="grate-divider" aria-hidden="true"></div>
+
+         <!-- Menu Section: 5-banner slider -->
+        <section id="menu" class="menu-section">
+            <div class="section-head">
+                <span class="eyebrow">お品書き &mdash; Our Menu</span>
+                <h2>Our Menu</h2>
+                <p>Explore our selection of premium cuts, traditional marinades, and unique dishes.</p>
+            </div>
+
+            <div class="banner-slider">
+                <div class="banner-track" id="bannerTrack">
+                    <div class="banner-slide" style="background-image:url('/Front-End/Asset/img/set 1.PNG')">
+                        <div class="banner-overlay"></div>
+                        <div class="banner-caption">
+                            <span class="banner-tag">01 &mdash; 和牛</span>
+                            <h3>Wagyu Selection</h3>
+                            <p>Ribeye, striploin, and A5 special cuts</p>
+                        </div>
+                    </div>
+                    <div class="banner-slide" style="background-image:url('/Front-End/Asset/img/set 2.PNG')">
+                        <div class="banner-overlay"></div>
+                        <div class="banner-caption">
+                            <span class="banner-tag">02 &mdash; 豚バラ</span>
+                            <h3>Pork Belly &amp; Pork</h3>
+                            <p>Marinated belly, jowl, and collar</p>
+                        </div>
+                    </div>
+                    <div class="banner-slide" style="background-image:url('/Front-End/Asset/img/set 3.png')">
+                        <div class="banner-overlay"></div>
+                        <div class="banner-caption">
+                            <span class="banner-tag">03 &mdash; 海鮮</span>
+                            <h3>Seafood &amp; Shellfish</h3>
+                            <p>Scallop, squid, and market catch</p>
+                        </div>
+                    </div>
+                    <div class="banner-slide" style="background-image:url('/Front-End/Asset/img/set 2.PNG')">
+                        <div class="banner-overlay"></div>
+                        <div class="banner-caption">
+                            <span class="banner-tag">04 &mdash; 野菜</span>
+                            <h3>Vegetables &amp; Sides</h3>
+                            <p>Grilled seasonal vegetables and banchan</p>
+                        </div>
+                    </div>
+                    <div class="banner-slide" style="background-image:url('/Front-End/Asset/img/set 1.PNG')">
+                        <div class="banner-overlay"></div>
+                        <div class="banner-caption">
+                            <span class="banner-tag">05 &mdash; コース</span>
+                            <h3>Set Courses</h3>
+                            <p>Chef-curated multi-course tasting menus</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="banner-arrow prev" id="bannerPrev" aria-label="Previous banner">&#8249;</button>
+                <button class="banner-arrow next" id="bannerNext" aria-label="Next banner">&#8250;</button>
+            </div>
+        </section>
+
+        <div class="grate-divider" aria-hidden="true"></div>
+
+         <!-- Gallery Section: carousel, 3 rows x 5 columns -->
+        <section id="gallery" class="gallery-section">
+            <div class="section-head">
+                <span class="eyebrow">ギャラリー &mdash; Gallery</span>
+                <h2>Gallery</h2>
+                <p>A taste of what's grilling, plated, and poured.</p>
+            </div>
+
+            <div class="gallery-wrap">
+                <div class="gallery-carousel" id="galleryCarousel">
+
+                    <div class="gallery-item">
+                        <div class="gallery-img"><img src="/Front-End/Asset/img/Avocado Salad.png" alt="Wagyu Ribeye"></div>
+                        <div class="gallery-info"><span class="gallery-name">Wagyu Ribeye</span><span class="gallery-price">$32</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-img"><img src="/Front-End/Asset/img/1.png" alt="Short Rib"></div>
+                        <div class="gallery-info"><span class="gallery-name">Short Rib</span><span class="gallery-price">$24</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-img"><img src="/Front-End/Asset/img/2.png" alt="Pork Belly"></div>
+                        <div class="gallery-info"><span class="gallery-name">Pork Belly</span><span class="gallery-price">$18</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-img"><img src="/Front-End/Asset/img/3.png" alt="Grilled Scallop"></div>
+                        <div class="gallery-info"><span class="gallery-name">Grilled Scallop</span><span class="gallery-price">$16</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-img"><img src="/Front-End/Asset/img/4.png" alt="Beef Tongue"></div>
+                        <div class="gallery-info"><span class="gallery-name">Beef Tongue</span><span class="gallery-price">$20</span></div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="gallery-img"><img src="/Front-End/Asset/img/Chuck Roll.png" alt="Chicken Thigh"></div>
+                        <div class="gallery-info"><span class="gallery-name">Chicken Thigh</span><span class="gallery-price">$14</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-img"><img src="/Front-End/Asset/img/Green Onion Wrapped Gyutan.png" alt="Kimchi"></div>
+                        <div class="gallery-info"><span class="gallery-name">House Kimchi</span><span class="gallery-price">$6</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-img"><img src="/Front-End/Asset/img/Hanging Tender.png" alt="Grilled Corn"></div>
+                        <div class="gallery-info"><span class="gallery-name">Grilled Corn</span><span class="gallery-price">$7</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-img"><img src="/Front-End/Asset/img/Hokke Egg Roll.png" alt="Squid Skewer"></div>
+                        <div class="gallery-info"><span class="gallery-name">Squid Skewer</span><span class="gallery-price">$15</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-img"><img src="/Front-End/Asset/img/Hokke Platter.png" alt="Egg Souffle"></div>
+                        <div class="gallery-info"><span class="gallery-name">Egg Souffl&eacute;</span><span class="gallery-price">$9</span></div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="gallery-img"><img src="/Front-End/Asset/img/Hokke Platter.png" alt="Set Course A"></div>
+                        <div class="gallery-info"><span class="gallery-name">Set Course A</span><span class="gallery-price">$68</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-img"><img src="/Front-End/Asset/img/Hokke Grilled.png" alt="Cold Sake"></div>
+                        <div class="gallery-info"><span class="gallery-name">Cold Sake</span><span class="gallery-price">$12</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-img"><img src="/Front-End/Asset/img/Kimchi.png" alt="Miso Soup"></div>
+                        <div class="gallery-info"><span class="gallery-name">Miso Soup</span><span class="gallery-price">$5</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-img"><img src="/Front-End/Asset/img/Avocado Salad.png" alt="Green Tea Ice Cream"></div>
+                        <div class="gallery-info"><span class="gallery-name">Green Tea Ice Cream</span><span class="gallery-price">$8</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-img"><img src="/Front-End/Asset/img/5.png" alt="Dining Room"></div>
+                        <div class="gallery-info"><span class="gallery-name">Private Dining Room</span><span class="gallery-price">Ask Staff</span></div>
+                    </div>
+
+                </div>
+                <button class="gallery-arrow prev" id="galleryPrev" aria-label="Previous gallery page">&#8249;</button>
+                <button class="gallery-arrow next" id="galleryNext" aria-label="Next gallery page">&#8250;</button>
+                
+            </div>
+        </section>
+
+        <div class="grate-divider" aria-hidden="true"></div>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="about-image">
+                <img src="/Front-End/Asset/img/About.png" alt="Chef grilling yakiniku over charcoal">
+                <!--<span class="about-badge">Est. 1998</span>-->
+            </div>
+            <div class="about-text">
+                <span class="eyebrow">私たちについて &mdash; Our Story</span>
+                <h2>About Us</h2>
+                <p>Learn more about Hokke Yakiniku and our commitment to authentic Japanese BBQ. Every table is fitted with a binchotan charcoal grill, the same method used in Osaka's yakiniku houses for decades.</p>
+                <p>We source directly from trusted farms for our wagyu, and hand-mix every tare and marinade in-house, daily, without shortcuts.</p>
+                <!--<div class="about-stats">
+                    <div class="stat"><span class="stat-num">25+</span><span class="stat-label">Years Grilling</span></div>
+                    <div class="stat"><span class="stat-num">40+</span><span class="stat-label">Cuts on the Menu</span></div>
+                    <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Binchotan Charcoal</span></div>
+                </div>
+            </div>-->
+        </section>
+
+        <div class="grate-divider" aria-hidden="true"></div>
+
+         <!-- Location Section -->
+        <section id="location" class="location-section">
+            <div class="section-head">
+                <span class="eyebrow">アクセス &mdash; Location</span>
+                <h2>Location</h2>
+                <p>Find us at our convenient location and enjoy a memorable dining experience.</p>
+            </div>
+            <div class="location-grid">
+                <div class="location-map">
+                    <iframe
+                        src="https://www.google.com/maps?q=Street+95+corner+street+386,+BKK3,+200m+from+st360+Phnom+Penh,+Cambodia,+12304&output=embed"
+                        width="100%"
+                        height="100%"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Hokke Yakiniku location map"
+                    ></iframe>
+                </div>
+                <div class="location-details">
+                    <div class="detail-row">
+                        <span class="detail-label">Address</span>
+                        <span class="detail-value">Street 95 corner street 386, BKK3, 200m from st360 Phnom Penh, Cambodia, 12304</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Hours</span>
+                        <span class="detail-value">Mon&ndash;Sun, 11:00 &ndash; 23:00</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Phone</span>
+                        <span class="detail-value">081 772 333</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="grate-divider" aria-hidden="true"></div>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <!--<div class="footer-inner">
+            <div class="footer-brand">
+                <img src="/Front-End/Asset/img/Logo.jpg" alt="Hokke Yakiniku Logo" class="logo">
+                <span class="brand-name">Hokke <em>Yakiniku</em></span>
+            </div>
+            <div class="footer-links">
+                <a href="#hero">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#reservations">Reservations</a>
+            </div>
+        </div>-->
+        <p class="footer-copy">&copy; 2026 Hokke Yakiniku. All rights reserved.</p>
+    </footer>
+
+    <script src="/Front-End/script.js"></script>
+</body>
+</html>
